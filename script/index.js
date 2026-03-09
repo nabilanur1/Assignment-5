@@ -77,7 +77,7 @@ const borderClass = issue.status === "open"
 const statusIcon =
 issue.status === "open"
 ? `<i class="fa-solid fa-circle-check text-green-500 text-lg"></i>`
-: `<i class="fa-solid fa-circle-x mark text-purple-500 text-lg"></i>`;
+: `<i class="fa-solid fa-circle-xmark text-purple-500 text-lg"></i>`;
 
 return `
 <div onclick="openIssueDetail('${issue._id}')" 
@@ -103,17 +103,17 @@ ${issue.description}
 
 <div class="flex gap-2 mb-6">
 
-<span class="bg-red-50 text-red-400 text-[9px] px-2 py-1 rounded font-black">
-BUG
+<span class="bg-red-50 text-red-400 text-[12px] px-2 py-1 rounded ">
+<i class="fa-solid fa-bug"></i>BUG
 </span>
 
-<span class="bg-yellow-50 text-yellow-600 text-[9px] px-2 py-1 rounded font-black">
-HELP WANTED
+<span class="bg-yellow-50 text-yellow-600 text-[12px] px-2 py-1 rounded ">
+<i class="fa-solid fa-life-ring"></i>HELP WANTED
 </span>
 
 </div>
 
-<div class="border-t pt-3 text-[10px] text-gray-400 font-bold">
+<div class="border-t pt-3 text-[10px] text-gray-400 ">
 
 <p>#1 by ${issue.author}</p>
 
